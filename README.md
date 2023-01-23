@@ -11,7 +11,18 @@ Here we have three Classes that allow for easy use of the create methods for any
 
 1. TextCompletion
 2. ImageGeneration
-3. CodeCreation
 
 Each with similar api's, which allow you to: run prompts through the models, save the output, and display the generated result. 
+
+
+## Setting up API key:
+
+There are two ways to set up the api key for openai. In the Getting started tutorial notebooks we maually enter the key every time. That method becomes impractical after prolonged use. We recommend that users set these keys in their bash profiles (if you are on Linux/MacOS). I have not tested on windows yet on setting up the OPEN_API_KEY. If someone using the python API has done this feel free to comment or contribute and let me know :)
+
+1. Open/Create `.profile` in your home directory (if you are on a M1(2020) or newer Mac, this is now called `.zprofile` because of zsh is used on these machine instead of bash).
+2. Then include the following to lines: `OPENAI_API_KEY="your-key"`, and `export OPENAI_API_KEY`
+3. Finally, restart the terminal or run the command `source .zprofile` to apply the change to the file
+
+
+## TextCompletion:
 
